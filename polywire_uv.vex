@@ -1,0 +1,9 @@
+// Original content https://www.sidefx.com/forum/topic/43073/?page=1#post-267159
+// By mackerBaehr
+
+// !UPD You can use Labs PolyWire UV
+
+// Apply to vertex wrangle.
+// The number 16 stands for the amount of divisions of the polywire.
+// ! Closed curves only
+@uv[1] += (@primnum / 16);
