@@ -1,0 +1,19 @@
+// Lissajous curve
+// Credits: Endagma
+// https://entagma.com
+
+int newPrim = addprim(0, "polyline");
+
+float f1 = chf("Frequency_1");
+float f2 = chf("Frequency_2");
+float f3 = chf("Frequency_3");
+float maxItr = chf("Max_Iterations");
+
+for (float angle = 0; angle < maxItr * PI ; angle += 0.01) {
+	float x = cos(angle * f1);
+	float y = sin(angle * f2);
+	float z = cos(angle * f3);
+	vector pos = set(x, y, z);
+	int newPoint = addpoint(0, pos);
+	addvertex(0, newPrim, newPoint);
+}
